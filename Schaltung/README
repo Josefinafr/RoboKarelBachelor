@@ -1,0 +1,22 @@
+Schaltung File:
+
+Wie sich die Schaltung zusammensetzt:
+
+Es wird eine 9V Batterie als Energiequelle der Schaltung genutzt. Zwei LDRs (lichtabhängige Widerstände) steuern die Motoren basierend auf der Helligkeit. 
+Die zwei Motoren sind die Lasten, die von den MOSFETs geschaltet werden. Es werden zwei MOSFETs vom Typ IRF520N verwendet, die den Stromfluss zu den Motoren steuern. 
+Die Widerstände bestehen je aus einem R1 mit 1 kΩ, der den Strom begrenzt, der zum Gate des MOSFETs fließt, und R2 mit 10 kΩ, der zusammen mit dem LDR einen Spannungsteiler bildet, 
+um den MOSFET in Dunkelheit oder schwachem Licht abzuschalten.
+
+Die Funktionsweise der Schaltung ist wie folgt:
+
+Die LDRs ändern ihren Widerstand abhängig von der Helligkeit. Bei hoher Helligkeit, also niedrigem Widerstand, erhöht sich die Spannung am Gate des MOSFETs über den Spannungsteiler, 
+der aus dem LDR und den beiden Widerständen R1 und R2 besteht. Der Spannungsteiler aus dem LDR und R2 sorgt dafür, dass bei zunehmendem Licht eine ausreichende Spannung am Gate des MOSFETs anliegt, 
+sodass dieser durchschaltet und der Motor Strom bekommt. Wenn die Spannung am Gate des MOSFETs durch den LDR-Spannungsteiler hoch genug ist, schaltet der MOSFET durch, und der Motor wird mit Strom versorgt. 
+Fällt die Helligkeit, sinkt die Spannung am Gate, der MOSFET schaltet ab, und der Motor stoppt.
+
+Die Verbindungen sind wie folgt:
+
+LDR und R2 (10 kΩ) sind in Serie geschaltet und bilden einen Spannungsteiler, der das Gate des MOSFETs steuert. 
+R1 (1 kΩ) ist in Serie zum Gate des MOSFETs geschaltet, um den Strom zu begrenzen. Die MOSFETs schalten die Motoren, indem sie den Stromkreis zur Masse schließen, wenn das Gate genug Spannung erhält.
+
+PDF: Falls README sich nicht öffnen lässt
