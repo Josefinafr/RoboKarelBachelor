@@ -18,5 +18,3 @@ Die Verbindungen sind wie folgt:
 
 LDR und R2 (10 kΩ) sind in Serie geschaltet und bilden einen Spannungsteiler, der das Gate des MOSFETs steuert. 
 R1 (1 kΩ) ist in Serie zum Gate des MOSFETs geschaltet, um den Strom zu begrenzen. Die MOSFETs schalten die Motoren, indem sie den Stromkreis zur Masse schließen, wenn das Gate genug Spannung erhält.
-
-PDF: Falls README sich nicht öffnen lässt
